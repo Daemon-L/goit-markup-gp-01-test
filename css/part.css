@@ -1,0 +1,89 @@
+.links {
+    text-decoration: none;
+    color: var(--secondary-font-collor);
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    font-style: normal;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    position:relative;
+  }
+
+  .container {
+    max-width: 1062px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+  .more-photos__title {
+    text-transform: uppercase;
+
+    
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+
+color: #487996;
+    
+    margin-bottom: 52px;
+}
+
+.container::after {
+    content: "";
+    width: 144px;
+    height: 144px;
+    background-image: 
+        url("../images/decoration/tank.png");
+        position:absolute;
+        top: 0;
+        right: 0;
+
+}
+
+
+.more-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-photos__item {
+    margin-right: 32px;
+}
+
+.more-photos__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.more-photos__item:nth-child(-n + 9) {
+    margin-bottom: 32px;
+  }
+
+
+@media screen and (min-width: 1200px) {
+
+
+}
+
+

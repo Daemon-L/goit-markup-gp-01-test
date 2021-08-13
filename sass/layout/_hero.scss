@@ -1,0 +1,102 @@
+// .heroes {
+//   background-color: var(--secondary-back-color);
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/decoration/hero-mob.jpg);
+//   background-position: center;
+//   background-size: cover;
+
+//   max-width: 480px;
+//   padding-top: 118px;
+//   padding-bottom: 118px;
+
+//   align-items: center;
+//   text-align: center;
+
+//   margin: 0 auto;
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+//   screen and (min-resolution: 192dpi) and (min-width: 280px),
+//   screen and (min-resolution: 2dppx) and (min-width: 280px) {
+//   .heroes {
+//     background-image: url(../images/decoration/hero-mob@2x.jpg);
+//   }
+// }
+
+// .heroes__title {
+//   font-weight: 900;
+//   font-size: 26px;
+//   line-height: 1.61;
+//   letter-spacing: 0.06em;
+//   color: var(--primary-back-color);
+//   text-transform: uppercase;
+//   margin-bottom: 30px;
+// }
+
+// .heroes__button {
+//   padding: 10px 32px;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+//   color: var(--primary-back-color);
+//   background-color: var(--accent-color);
+//   border-width: 1px;
+
+//   &:hover,
+//   &:focus {
+//     background-color: #188ce8;
+//   }
+// }
+
+// // ************************ TABLET ***************************
+
+// @media screen and (min-width: 768px) {
+//   .heroes {
+//     max-width: 768px;
+
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/decoration/hero-tab.jpg);
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   .heroes {
+//     background-image: url(../images/decoration/hero-tab@2x.jpg);
+//   }
+// }
+
+// // *********************** DESKTOP ********************
+
+// @media screen and (min-width: 1200px) {
+//   .heroes {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/decoration/hero.jpg);
+
+//     max-width: 1600px;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//   }
+
+//   .heroes__title {
+//     font-size: 44px;
+//     line-height: 1.36;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   .heroes {
+//     background-image: url(../images/decoration/hero@2x.jpg);
+//   }
+// }
