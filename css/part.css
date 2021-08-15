@@ -1,89 +1,118 @@
 .links {
-    text-decoration: none;
-    color: var(--secondary-font-collor);
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-style: normal;
-  
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     
-  }
-  
-  .list {
-    list-style-type: none;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  text-decoration: none;
+  color: var(--secondary-font-collor);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.more-photos__section {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.more-photos__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.more-photos__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .more-photos__item--hidden {
+    display: none;
   }
 
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    position:relative;
+  .more-photos__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .container {
-    max-width: 1062px;
-    margin: auto;
-    padding: 0;
+  .more-photos__item:not(:first-child) {
+    margin-top: 16px;
   }
+}
 
-  .picture {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
+@media screen and (min-width: 768px) {
+  .more-photos__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
   .more-photos__title {
-    text-transform: uppercase;
-
-    
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.25;
-
-color: #487996;
-    
-    margin-bottom: 52px;
-}
-
-.container::after {
-    content: "";
-    width: 144px;
-    height: 144px;
-    background-image: 
-        url("../images/decoration/tank.png");
-        position:absolute;
-        top: 0;
-        right: 0;
-
-}
-
-
-.more-photos__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.more-photos__item {
-    margin-right: 32px;
-}
-
-.more-photos__item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.more-photos__item:nth-child(-n + 9) {
     margin-bottom: 32px;
   }
 
+  .more-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+    margin-top: -19px;
+  }
 
-@media screen and (min-width: 1200px) {
+  .more-photos__item {
+    margin-left: 18px;
+    margin-top: 19px;
 
-
+    flex-basis: auto;
+  }
 }
 
+@media screen and (min-width: 1444px) {
+  .more-photos__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  .more-photos__container {
+    padding-left: 191px;
+    padding-right: 191px;
+  }
+
+  .more-photos__title {
+    margin-bottom: 52px;
+    max-width: 624px;
+  }
+
+  .more-photos__list {
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+
+  .more-photos__item {
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+}
+
+.gellery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.gellery li {
+  margin-right: 10px;
+}
