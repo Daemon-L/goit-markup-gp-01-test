@@ -1,6 +1,4 @@
-jquery(document).ready(function () {
-    
-    $("#lightgallery").lightgallery();
-    
+$(function () {
+    $("#lightgallery").lightGallery();
 });
 
