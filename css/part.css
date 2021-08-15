@@ -80,6 +80,10 @@
 }
 
 @media screen and (min-width: 1444px) {
+  .section {
+    max-width: 1062px;
+  }
+
   .more-photos__section {
     padding-top: 50px;
     padding-bottom: 50px;
