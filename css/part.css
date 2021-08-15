@@ -1,30 +1,81 @@
-.links {
-  text-decoration: none;
-  color: var(--secondary-font-collor);
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  font-style: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .list {
-  list-style-type: none;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  list-style: none;
 }
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--main-font);
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-right: 189px;
+    padding-left: 189px;
+  }
+}
+
+.section {
+  padding-bottom: 52px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+
+
+/* *************************************** */
 
 .more-photos__section {
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.more-photos__container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .more-photos__title {
@@ -55,11 +106,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .more-photos__container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   .more-photos__title {
     margin-bottom: 32px;
   }
@@ -74,24 +120,16 @@
   .more-photos__item {
     margin-left: 18px;
     margin-top: 19px;
-
+   
     flex-basis: auto;
   }
+ 
 }
 
-@media screen and (min-width: 1444px) {
-  .section {
-    max-width: 1062px;
-  }
-
+@media screen and (min-width: 1440px) {
   .more-photos__section {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .more-photos__container {
-    padding-left: 191px;
-    padding-right: 191px;
   }
 
   .more-photos__title {
@@ -108,8 +146,8 @@
     margin-left: 32px;
     margin-top: 32px;
   }
-}
 
+/* ***************************************** */
 .gellery {
   display: flex;
   justify-content: center;
